@@ -1,11 +1,9 @@
 import { StatusBar } from "expo-status-bar";
-import {
-  StyleSheet,
-  View,
-} from "react-native";
+import { StyleSheet, View } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-import Constants from "expo-constants";
+
 import { Main } from "./components/Main";
+import { Logo } from "./components/Logo";
 
 export default function App() {
   return (
@@ -21,10 +19,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#111",
+    backgroundColor: "#000",
     alignItems: "center",
     justifyContent: "center",
-    paddingTop: Constants.statusBarHeight,
-    padding: 12,
-  }
+    paddingHorizontal: 12,
+  },
 });
